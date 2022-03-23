@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+
+
+<BorderPane prefHeight="553.0" prefWidth="614.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.animationlab.PrimaryController">
+   <center>
+      <Pane fx:id="pane" prefHeight="384.0" prefWidth="417.0" BorderPane.alignment="CENTER">
+         <children>
+            <Rectangle fx:id="Rect" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" layoutX="200.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" width="100.0" />
+         </children>
+      </Pane>
+   </center>
+   <left>
+      <VBox prefHeight="553.0" prefWidth="118.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="chnageToYellow" mnemonicParsing="false" onAction="#chnageToYellowColor" text="Change to Yellow" />
+            <Button fx:id="changeWidth" mnemonicParsing="false" onAction="#changeWithOfRect" text="Change Width" />
+            <Button fx:id="doBoth" mnemonicParsing="false" onAction="#parallelAnimations" text="Do both " />
+            <Button fx:id="translateButton" mnemonicParsing="false" onAction="#translateShape" text="Translate" />
+            <Button fx:id="translateSequ" mnemonicParsing="false" onAction="#translateShapeSequ" text="Translate (seq.)" />
+            <Button fx:id="rotateButton" mnemonicParsing="false" onAction="#rotateAndFade" text="Rotation" />
+         </children>
+      </VBox>
+   </left>
+</BorderPane>
